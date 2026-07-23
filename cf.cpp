@@ -197,6 +197,9 @@ inline ii sub_ii(const ii &a, const ii &b) { return MP(sub(a.F, b.F), sub(a.S, b
 inline int get_random(int a, int b) { return a + rand() % (b - a + 1); }
 // ---------- Random no gen -------------
 mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
+// uniform_int_distribution<long long> distrib(1, 1000000000000LL);
+// // Generate a random 64-bit number
+// ll random_val = distrib(rng);
 
 using state = tuple<int, int, int>;
 using vS = vector<state>;

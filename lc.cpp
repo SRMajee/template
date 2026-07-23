@@ -51,8 +51,6 @@ const int PRIME_2 = 1000000009;
 const int PRIME_3 = 999999929;
 const int PRIME_4 = 998244353;
 
-inline int LC(int i) { return (i << 1); }     // same as 2*i
-inline int RC(int i) { return (i << 1) | 1; } // same as 2*i + 1
 template <typename T>
 int SZ(const T &x) { return static_cast<int>(x.size()); }
 
